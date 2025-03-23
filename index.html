@@ -4,57 +4,91 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Madhulika Maddipudi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    * {
       margin: 0;
       padding: 0;
-      background-color: #f9f9f9;
-      color: #333;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #fff;
+      color: #111;
+      line-height: 1.6;
     }
     header {
-      background-color: #4a90e2;
-      color: white;
-      padding: 1rem;
+      padding: 4rem 2rem;
       text-align: center;
+      border-bottom: 1px solid #eee;
+    }
+    header h1 {
+      font-size: 3rem;
+      font-weight: 600;
+    }
+    header p {
+      margin-top: 0.5rem;
+      color: #666;
     }
     nav {
-      background-color: #2c3e50;
       display: flex;
       justify-content: center;
       gap: 2rem;
-      padding: 1rem 0;
+      padding: 1.5rem;
+      border-bottom: 1px solid #eee;
+      background-color: #fafafa;
     }
     nav a {
-      color: white;
       text-decoration: none;
-      font-weight: bold;
+      color: #333;
+      font-weight: 500;
+      position: relative;
     }
-    nav a:hover {
-      text-decoration: underline;
+    nav a::after {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      background: #333;
+      left: 0;
+      bottom: -4px;
+      transition: 0.3s;
+    }
+    nav a:hover::after {
+      width: 100%;
     }
     section {
-      padding: 2rem;
       max-width: 800px;
-      margin: auto;
+      margin: 4rem auto;
+      padding: 0 2rem;
+    }
+    section h2 {
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+    section p, section ul {
+      font-size: 1rem;
+      color: #444;
+    }
+    ul li {
+      margin-left: 1.5rem;
+      list-style: disc;
     }
     footer {
-      background-color: #2c3e50;
-      color: white;
       text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-    }
-    h2 {
-      border-bottom: 2px solid #ccc;
-      padding-bottom: 0.5rem;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #aaa;
+      border-top: 1px solid #eee;
+      margin-top: 4rem;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Madhulika Maddipudi</h1>
-    <p>QA Engineer | Automation Enthusiast | Problem Solver</p>
+    <p>QA Engineer | Automation Expert | Problem Solver</p>
   </header>
 
   <nav>
@@ -67,28 +101,29 @@
 
   <section id="home">
     <h2>Home</h2>
-    <p>Welcome to my professional portfolio! I specialize in quality assurance, automation, and building robust test strategies across industries.</p>
+    <p>Welcome! I'm Madhulika Maddipudi, a QA Engineer passionate about quality, automation, and shipping polished products. Explore my work and skills here.</p>
   </section>
 
   <section id="about">
     <h2>About</h2>
-    <p>I'm Madhulika, a QA Engineer with experience in domains like Banking, E-commerce, Healthcare, Aerospace, and Hardware. My passion lies in ensuring software quality through scalable automation frameworks and deep collaboration with cross-functional teams.</p>
+    <p>With years of experience in software testing, automation, and quality leadership across industries including Banking, E-commerce, Healthcare, and Aerospace, I bring both depth and agility to engineering teams. My strength lies in cross-functional collaboration, debugging edge cases, and establishing scalable testing frameworks.</p>
   </section>
 
   <section id="skills">
     <h2>Skills</h2>
     <ul>
-      <li>Automation: Selenium, UIAutomator2, Python, Java</li>
+      <li>Languages: Python, Java</li>
+      <li>Automation Tools: Selenium, UIAutomator2</li>
       <li>Frameworks: Page Object Model, Data Driven</li>
       <li>CI/CD: Jenkins, GitHub Actions</li>
-      <li>Testing: Manual, Regression, Smoke, Sanity, Accessibility (A11Y)</li>
-      <li>Debugging: PCB-level analysis, Log tracing, Failure analysis</li>
+      <li>Testing Types: Regression, Smoke, Sanity, Accessibility (A11Y)</li>
+      <li>Debugging: PCB-level, Log analysis, Root cause diagnosis</li>
     </ul>
   </section>
 
   <section id="experience">
     <h2>Experience</h2>
-    <p>Over the years, I've led test planning and automation strategy at multiple companies, driving up automation coverage to 80% and reducing manual test effort by over 60%. I've worked cross-functionally to debug device-level failures and enforce QA best practices from early product development to release.</p>
+    <p>I’ve led quality engineering efforts in various domains, scaling automation coverage up to 80% and reducing manual regression cycles by over 60%. Known for enhancing QA pipelines, triaging ambiguous failures, and shipping confidently with tight deadlines.</p>
   </section>
 
   <section id="contact">
@@ -99,9 +134,8 @@
   </section>
 
   <footer>
-    <p>&copy; 2025 Madhulika Maddipudi. All rights reserved.</p>
+    <p>&copy; 2025 Madhulika Maddipudi</p>
   </footer>
 </body>
 </html>
 
-<!-- Trigger rebuild -->
